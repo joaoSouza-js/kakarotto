@@ -1,0 +1,185 @@
+/*global================ */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    height: 100%;
+    font-family: var(--Arial);
+    overflow: hidden;
+    
+}
+:root{
+    --Arial : Arial, Helvetica, sans-serif;
+    --gray-light: rgba(121, 121, 121, 0.671);
+}
+
+/*global================ */
+/*main============================= */
+main{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    line-height: 100%;
+   
+}
+/*form============*/
+form{
+    position: relative;
+    right: 23%;
+    width: 43%;
+    max-width: 400px;
+}
+form h1{
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+}
+
+/*login_Google=========*/
+#login_Google{
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 0px 45px 12px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    line-height: 35px;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+#login_Google a{
+    text-decoration: none;
+    color:  var(--gray-light);
+    font-weight: 600;
+}
+#login_Google p {
+    display: inline-block;
+    margin-left: 10px;
+}
+#login_Google a img{
+    width: 30px;
+    position: relative;
+    top: 8px;
+    
+}
+#login_Google:hover{
+    background-color: rgba(199, 199, 199, 0.788);
+}
+/*login_Google=========*/
+/* ou==================*/
+#ou{position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--gray-light);
+    font-size: 1.1em;
+}
+#ou::after, #ou::before{
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    content: '';
+    top: -3px;
+    width: 43%;
+    height: 2px;
+    background-color: var(--gray-light)
+
+}
+#ou::before{
+    margin: 0 10px 0 0;
+}
+/*ou===============*/
+
+/*login============*/
+
+/*input=============*/
+input{
+    display: inline-block;
+    width: 94%;
+    padding: 11.5px;
+    border-radius: 3px;
+    margin: 10px 0;
+    font-size: 17px;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+#login input:nth-last-of-type(1){
+    margin: 10px 0 4px 0;
+}
+input:hover{
+    background-color: #3788cf28;
+}
+input:focus{
+    outline: 2px solid #5494cc93;
+    background-color: white;
+}
+/*input==========*/
+
+/*create_acount==========*/
+#create_acount{
+    margin-bottom: 20px;
+}
+#create_acount a{
+    color: rgb(255, 168, 6);
+    font-weight: 600;
+}
+/*create_acount=======*/
+
+
+/*enter==========*/
+#enter input{
+    width: 100%;
+    white-space: normal;
+    background-color: #fc723d;
+    color: #fff;
+    font-size: 1.1em
+
+}
+#enter input:hover{
+    background-color: #ff4800;
+}
+#principal{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+}
+#sheiLong{
+    position: absolute;
+    left: -260px;
+    top: 80px;
+    overflow: hidden;
+    display: none;
+}
+/*main===================== */
+@media screen and (min-width:1291px){
+    input,#login_Google{
+        font-size: 1.35em;
+    }
+    #login_Google{
+        padding: 30px 45px 12;
+    }
+    form{
+        width: 27%;
+        right: 15%;
+        max-width: 700px;
+    }
+    #sheiLong{
+        display: inline;
+        top: 10%;
+    }
+}
+@media screen and (min-width:1885px){
+    #sheiLong{
+        top:280px
+    }
+}
