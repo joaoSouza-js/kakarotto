@@ -146,6 +146,8 @@ input:focus{
 #enter input:hover{
     background-color: #ff4800;
 }
+/*enter=========*/
+
 #principal{
     position: absolute;
     top: 0;
@@ -159,6 +161,14 @@ input:focus{
     top: 80px;
     overflow: hidden;
     display: none;
+}
+/*icon===========*/
+i{
+    position: relative;
+    top: -44px;
+    font-size: 1.5em;
+    left: 10px;
+    color: white;
 }
 /*main===================== */
 @media screen and (min-width:1291px){
@@ -181,5 +191,37 @@ input:focus{
 @media screen and (min-width:1885px){
     #sheiLong{
         top:280px
+    }
+}
+@media screen and (max-width:1000px){
+    form{
+        right: 25%;
+    }
+    form h1{
+        line-height: 30px;
+        font-size: 1.7em;
+    }
+
+    #login_Google{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    #ou::before, #ou::after{
+        width: 33%;
+    }
+}
+@media screen and (max-width:489px){
+    form h1{
+        font-size: 1.5em;
+    }
+    main{
+        overflow-x: hidden;
+    }
+    #principal{
+        overflow-x: hidden;
+        width: 166%;
+    }
+    #login_Google{
+        padding: 0px;
     }
 }
