@@ -226,14 +226,27 @@ i{
     #login_Google{
         width: 105%;
         padding: 0px;
-        font-size: 0.7em;
+        font-size: 0.66em;
+        font-weight: 900;
     }
     #login_Google a img{
-        width: 18px;
-        top: 5px;
+        width: 15px;
+        top: 3px;
         right: 3px
     }
     input{
         font-size: 0.95em;
+        width: 110%
+    }
+    
+    #enter input{
+        width: 126%;
+    }
+}
+@media screen and (max-width:314px){
+    #login_Google{font-size: 0.6em;}
+    #login_Google  a img{
+        width: 10px;
+        top: 2px;
     }
 }
