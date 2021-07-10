@@ -224,14 +224,14 @@ i{
         width: 166%;
     }
     #login_Google{
-        width: 105%;
+        width: 107%;
         padding: 0px;
-        font-size: 0.66em;
+        font-size: 0.7em;
         font-weight: 900;
     }
     #login_Google a img{
-        width: 15px;
-        top: 3px;
+        width: 12px;
+        top: 2.2px;
         right: 3px
     }
     input{
@@ -243,7 +243,7 @@ i{
         width: 126%;
     }
 }
-@media screen and (max-width:314px){
+@media screen and (max-width:298px){
     #login_Google{font-size: 0.6em;}
     #login_Google  a img{
         width: 10px;
