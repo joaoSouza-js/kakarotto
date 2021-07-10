@@ -1,4 +1,5 @@
 /*global================ */
+@charset"UTF8";
 *{
     margin: 0;
     padding: 0;
@@ -213,6 +214,7 @@ i{
 @media screen and (max-width:489px){
     form h1{
         font-size: 1.5em;
+        margin: 1em 0;
     }
     main{
         overflow-x: hidden;
@@ -222,6 +224,16 @@ i{
         width: 166%;
     }
     #login_Google{
+        width: 105%;
         padding: 0px;
+        font-size: 0.7em;
+    }
+    #login_Google a img{
+        width: 18px;
+        top: 5px;
+        right: 3px
+    }
+    input{
+        font-size: 0.95em;
     }
 }
